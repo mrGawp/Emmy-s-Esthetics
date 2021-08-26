@@ -808,10 +808,12 @@ input:checked + .slider:before {
   display: flex;
   opacity: 1;
   margin:0;
+  overflow-x: hidden !important;
 }
 .sec4-p {
   margin:0;
   width:80%;
+  overflow-x: hidden !important;
 }
 /*SVG'S ---------------------------------------------------------------------*/
 /*SVG'S*/
