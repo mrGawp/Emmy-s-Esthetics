@@ -809,7 +809,7 @@ input:checked + .slider:before {
   opacity: 1;
 }
 .sec4-p {
-  width:100%;
+  width:50%;
 }
 /*SVG'S ---------------------------------------------------------------------*/
 /*SVG'S*/
