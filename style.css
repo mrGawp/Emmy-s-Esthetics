@@ -807,8 +807,10 @@ input:checked + .slider:before {
   justify-content:center;
   display: flex;
   opacity: 1;
+  margin:0;
 }
 .sec4-p {
+  margin:0;
   width:80%;
 }
 /*SVG'S ---------------------------------------------------------------------*/
