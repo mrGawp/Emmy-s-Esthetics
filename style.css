@@ -858,6 +858,7 @@ position: absolute;
 width: 120px;
 height: 580px;
 transform: rotateY(90deg);
+-webkit-transform: rotateY(90deg);
 transition: 4s;
 z-index: 4;
 }
