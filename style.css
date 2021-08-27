@@ -850,7 +850,7 @@ margin-bottom: auto;
 position: absolute;
 width: 120px;
 height: 580px;
-transition: 6s;
+transition: 4s;
 z-index: 3;
 }
 .lashbrush2 {
@@ -858,16 +858,16 @@ position: absolute;
 width: 120px;
 height: 580px;
 transform: rotateY(90deg);
-transition: 6s;
+transition: 4s;
 z-index: 4;
 }
 .lashbrush-p:hover .lashbrush1{
-transform: rotateY(1020deg) scale(1.1);
--webkit-transform: rotateY(1110deg) scale(1.1);
+transform: rotateY(1000deg) scale(1.1);
+-webkit-transform: rotateY(1000deg) scale(1.1);
 }
 .lashbrush-p:hover .lashbrush2{
-transform: rotateY(1110deg) scale(1.1);
--webkit-transform: rotateY(1110deg) scale(1.1);
+transform: rotateY(1090deg) scale(1.1);
+-webkit-transform: rotateY(1090deg) scale(1.1);
 }
 .p-topleft {
 width: 150px;
