@@ -862,10 +862,10 @@ transition: 6s;
 z-index: 4;
 }
 .lashbrush-p:hover .lashbrush1{
-transform: rotateY(2020deg) scale(1.1);
+transform: rotateY(1020deg) scale(1.1);
 }
 .lashbrush-p:hover .lashbrush2{
-transform: rotateY(2110deg) scale(1.1);
+transform: rotateY(1110deg) scale(1.1);
 }
 .p-topleft {
 width: 150px;
