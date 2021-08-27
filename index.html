@@ -140,7 +140,17 @@ console.log("let me change your mind, christianneeson09@gmail.com");
   </center>
 
 </section>
-<img class="lay-waves" id="d-sec2-sec3-svg" src='./svgs/waves2.svg'/>
+<img src='./svgs/waves2.svg' style="opacity: 1;
+aspect-ratio: 900/200;
+height: auto;
+width:100%;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+border:none;
+margin-top:-9px;
+margin-bottom:-9px;" id="sec2-sec3-svg"/>
+
 <section class="sec3">
   <div class=faq-t-p>
   <h1 class="faq-t">FAQ</h1>
@@ -264,19 +274,17 @@ function darkb() {
       var dsec2 = document.getElementById("d-sec2");
         dsec2.classList.toggle("d-sec2");
         dsec2.classList.toggle("sec2");
+        
+      var checkbox = document.getElementById("checkbox");
 
-    var dsec1TopSvg = document.getElementById("d-sec1-top-svg");
-      dsec1TopSvg.classList.toggle("d-waves-sec1-top");
-      dsec1TopSvg.classList.toggle("waves-sec1-top");
-
-      var dsec1sec2Svg = document.getElementById("d-sec1-sec2-svg");
-        dsec1sec2Svg.classList.toggle("d-waves-sec1-sec2");
-        dsec1sec2Svg.classList.toggle("waves-sec1-sec2");
-
-        var dsec2sec3Svg = document.getElementById("d-sec2-sec3-svg");
-          dsec2sec3Svg.classList.toggle("d-waves-sec2-bot0");
-          dsec2sec3Svg.classList.toggle("waves-sec2-bot0");
-}
+      if (checkbox.checked == true) {
+        document.getElementById("d-sec1-sec2-svg").src = './svgs/d-waves1.svg';
+        document.getElementById("d-sec1-top-svg").src = './svgs/d-waves0.svg';
+      } else if (checkbox.checked == false) {
+        document.getElementById("d-sec1-sec2-svg").src = './svgs/waves1.svg';
+        document.getElementById("d-sec1-top-svg").src = './svgs/waves0.svg';
+      }
+ }
 </script>
 
 
