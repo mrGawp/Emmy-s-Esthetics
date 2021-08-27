@@ -866,8 +866,8 @@ transform: rotateY(1000deg) scale(1.1);
 -webkit-transform: rotateY(1000deg) scale(1.1);
 }
 .lashbrush-p:hover .lashbrush2{
-transform: rotateY(1090deg) scale(1.1);
--webkit-transform: rotateY(1090deg) scale(1.1);
+transform: rotateY(1000deg) scale(1.1);
+-webkit-transform: rotateY(1000deg) scale(1.1);
 }
 .p-topleft {
 width: 150px;
