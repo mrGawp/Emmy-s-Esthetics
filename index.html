@@ -92,7 +92,7 @@ console.log("let me change your mind, christianneeson09@gmail.com");
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front1" style="animation-duration: 3s;">
-          <img src="brows.png" style="width:90px;height:90px;margin-top:55px;"/>
+          <img src="brows.png" class="faq-img"/>
           <h1>Brows</h1>
         </div>
         <div class="flip-card-back1" style="animation-duration: 3s;">
@@ -104,7 +104,7 @@ console.log("let me change your mind, christianneeson09@gmail.com");
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front2"style="animation-duration:4s;">
-          <img src="skincare.png" style="width:90px;height:90px;margin-top:55px;"/>
+          <img src="skincare.png" class="faq-img"/>
           <h1>Skincare</h1>
         </div>
         <div class="flip-card-back2"style="animation-duration:3s;">
@@ -116,7 +116,7 @@ console.log("let me change your mind, christianneeson09@gmail.com");
   <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front1"style="animation-duration:3.5s;">
-          <img src="body.png" style="width:90px;height:90px;margin-top:55px;"/>
+          <img src="body.png" class="faq-img"/>
           <h1>Body</h1>
         </div>
         <div class="flip-card-back1"style="animation-duration:3.5s;">
@@ -128,7 +128,7 @@ console.log("let me change your mind, christianneeson09@gmail.com");
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front2" style="animation-duration:3s;">
-          <img src="nails.png" style="width:90px;height:90px;margin-top:55px;"/>
+          <img src="nails.png" class="faq-img"/>
           <h1>Nails</h1>
         </div>
         <div class="flip-card-back2"style="animation-duration:3s;">
@@ -140,18 +140,9 @@ console.log("let me change your mind, christianneeson09@gmail.com");
   </center>
 
 </section>
-<img src='./svgs/waves2.svg' style="opacity: 1;
-aspect-ratio: 900/200;
-height: auto;
-width:100%;
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-border:none;
-margin-top:-9px;
-margin-bottom:-9px;" id="sec2-sec3-svg"/>
+<img src='./svgs/waves2.svg' class="lay-waves" id="sec2-sec3-svg"/>
 
-<section class="sec3">
+<section class="sec3" id="d-sec3">
   <div class=faq-t-p>
   <h1 class="faq-t">FAQ</h1>
   </div>
@@ -202,14 +193,15 @@ margin-bottom:-9px;" id="sec2-sec3-svg"/>
     </div>
   </center>
 </section>
-<img class="lay-waves" src='./svgs/waves3.svg'/>
-<section class="sec4">
+<img class="lay-waves" src='./svgs/waves3.svg' id="sec3-sec4-svg"/>
+<section class="sec4" id="d-sec4">
   <div class="sec4-p">
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
   <div class="elfsight-app-872c1018-2af2-4359-99e1-d35d513096bf"></div>
 </div>
 </section>
-<img class="lay-waves waves-sec4-bot" src='./svgs/waves4.svg'/>
+
+<img class="lay-waves" src='./svgs/waves4.svg' id="sec4-bot"/>
 
 <div class="b-header">
   <img class="right-emmyb" src="title.png"/>
@@ -274,13 +266,26 @@ function darkb() {
       var dsec2 = document.getElementById("d-sec2");
         dsec2.classList.toggle("d-sec2");
         dsec2.classList.toggle("sec2");
-        
-      var checkbox = document.getElementById("checkbox");
 
+        var dsec3 = document.getElementById("d-sec3");
+          dsec3.classList.toggle("d-sec3");
+          dsec3.classList.toggle("sec3");
+
+          var dsec4 = document.getElementById("d-sec4");
+            dsec4.classList.toggle("d-sec4");
+            dsec4.classList.toggle("sec4");
+
+      var checkbox = document.getElementById("checkbox");
       if (checkbox.checked == true) {
+        document.getElementById("sec4-bot").src = './svgs/d-waves4.svg';
+        document.getElementById("sec3-sec4-svg").src = './svgs/d-waves3.svg';
+        document.getElementById("sec2-sec3-svg").src = './svgs/d-waves2.svg';
         document.getElementById("d-sec1-sec2-svg").src = './svgs/d-waves1.svg';
         document.getElementById("d-sec1-top-svg").src = './svgs/d-waves0.svg';
       } else if (checkbox.checked == false) {
+        document.getElementById("sec4-bot").src = './svgs/waves4.svg';
+        document.getElementById("sec3-sec4-svg").src = './svgs/waves3.svg';
+        document.getElementById("sec2-sec3-svg").src = './svgs/waves2.svg';
         document.getElementById("d-sec1-sec2-svg").src = './svgs/waves1.svg';
         document.getElementById("d-sec1-top-svg").src = './svgs/waves0.svg';
       }

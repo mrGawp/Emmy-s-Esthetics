@@ -158,9 +158,26 @@ html {
   display: flex;
   opacity: 1;
 }
-.d-waves-sec1-top{background-image: url('./svgs/d-waves0.svg');}
-.d-waves-sec1-sec2{background-image: url('./svgs/d-waves1.svg');}
-.d-waves-sec2-bot0{background-image: url('./svgs/d-waves2.svg');}
+.d-sec3{/*FAQ*/
+  width:100%;
+  height: auto;
+  position: relative;
+  background-color: #365391;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+}
+.d-sec4{ /*reviews*/
+  width:100%;
+  height: auto;
+  position: relative;
+  background-color: #422487;
+  justify-content:center;
+  display: flex;
+  opacity: 1;
+  margin:0;
+  overflow-x: hidden !important;
+}
 /*HEADER PART-------------------------------------------------------------*/
 /*HEADER PART*/
 /*HEADER PART*/
@@ -639,12 +656,12 @@ input:checked + .slider:before {
 }
 .flip-card {
   background-color: transparent;
-  width: 310px;
-  height: 290px;
+  width: 14vw;
+  height: 14vw;
   display: inline-block;
-  margin: 50px;
-  margin-left:3vw;
-  margin-right:3vw;
+  margin: 30px;
+  margin-left:4vw;
+  margin-right:4vw;
   opacity: 0.6;
 }
 .flip-card-inner {
@@ -671,7 +688,7 @@ input:checked + .slider:before {
   border-radius: 28px;
   font-family: 'Oswald', sans-serif;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  font-size: 22px;
+  font-size: 1vw;
   color: #fff;
   text-transform: uppercase;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
@@ -683,19 +700,15 @@ input:checked + .slider:before {
 }
 .flip-card-back1 {
   background: none;
-  border: 8px solid #fff;
-  border-radius: 28px;
+  border: 4px solid #fff;
+  border-radius: 10px;
   font-family: 'Oswald', sans-serif;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  font-size: 16px;
+  font-size: 0.7vw;
   color: #fff;
   text-transform: uppercase;
   transform: rotateY(180deg);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-  animation-name: borderani;
-  animation-iteration-count: infinite;
-  -webkit-animation-name: borderani;
-  -webkit-animation-iteration-count: infinite;
 }
 .flip-card-front2, .flip-card-back2 {
   position: absolute;
@@ -713,7 +726,7 @@ input:checked + .slider:before {
   border-bottom-right-radius: 22px;
   font-family: 'Oswald', sans-serif;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  font-size: 22px;
+  font-size: 1vw;
   color: #fff;
   text-transform: uppercase;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
@@ -725,28 +738,29 @@ input:checked + .slider:before {
 }
 .flip-card-back2 {
   background: none;
-  border: 8px solid #fff;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 22px;
-  border-bottom-left-radius: 22px;
-  border-bottom-right-radius: 22px;
+  border: 4px solid #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   font-family: 'Oswald', sans-serif;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  font-size: 16px;
+  font-size: 0.7vw;
   color: #fff;
-  animation-name: borderani;
-  animation-iteration-count: infinite;
-  -webkit-animation-name: borderani;
-  -webkit-animation-iteration-count: infinite;
   text-transform: uppercase;
   transform: rotateY(180deg);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+.faq-img {
+  margin-top:2.2vw;
+  width: 5vw;
+  height: 5vw;
 }
 .sec3{/*FAQ*/
   width:100%;
   height: auto;
   position: relative;
-  background-color: #5c5cdb;
+  background-color: #79a0ed;
   display: flex;
   flex-direction: column;
   opacity: 1;
@@ -803,7 +817,7 @@ input:checked + .slider:before {
   width:100%;
   height: auto;
   position: relative;
-  background-color: #6868e3;
+  background-color: #796dc9;
   justify-content:center;
   display: flex;
   opacity: 1;
@@ -831,11 +845,6 @@ input:checked + .slider:before {
   margin-top:-9px;
   margin-bottom:-9px;
 }
-.waves-sec1-top{background-image: url('./svgs/waves0.svg');}
-.waves-sec1-sec2{background-image: url('./svgs/waves1.svg');}
-.waves-sec2-bot0{background-image: url('./svgs/waves2.svg');}
-.waves-sec2-bot1{background-image: url('./svgs/waves3.svg');}
-.waves-sec4-bot{background-image: url('./svgs/waves4.svg');}
 /*LASHBRUSH AND TEXT-----------------------------------------*/
 /*LASHBRUSH AND TEXT*/
 /*LASHBRUSH AND TEXT*/
